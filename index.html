@@ -7,8 +7,11 @@
 <script type="text/javascript" src="js/jquery-3.0.0.min.js"> </script>
 <script type="text/javascript" src="js/main.js"> </script>
 </head>
-<body>
 
+<body>
+<audio id="audio" src="audio/yummy.mp3"></audio>
+<audio id="audioMaria" src="audio/yeah.mp3"></audio>
+<h1>Shit Game</h1>
 <div><p id="number"></p></div>
 
 <button id="buttontrump"><i class="em em-pig2"></i></button>
@@ -32,13 +35,26 @@
 
 $(document).ready(function() {
 
+  function play(){
+         var audio = document.getElementById("audio");
+         audio.play();
+  }
+
+  function playMaria(){
+          var audioMaria = document.getElementById("audioMaria");
+          audioMaria.play();
+  }
+
+
 	$("#buttontrump").click(function() {
 		$(".donaldtrump").toggleClass("animate");
+    play();
 
 	});
 
   $("#buttonmaria").click(function() {
 		$(".mariaputa").toggleClass("animatemaria");
+    playMaria();
 	});
 
 });
