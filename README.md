@@ -1,2 +1,2 @@
 # shitgame
-https://rawgit.com/anadebarros/shitgame/master/index.html
+https://cdn.rawgit.com/anadebarros/shitgame/master/index.html
