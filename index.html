@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Shite Game</title>
 <link rel="stylesheet" type="text/css" href="main.css">
+<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 <script type="text/javascript" src="js/jquery-3.0.0.min.js"> </script>
 <script type="text/javascript" src="js/main.js"> </script>
 </head>
 <body>
 
-<input type="checkbox" id="checktoggler">
-<label for="checktoggler" class="toggle">🍭</label>
+<div><p id="number"></p></div>
+
+<button id="buttontrump"><i class="em em-pig2"></i></button>
+<button id="buttonmaria"><i class="em em-information_desk_person"></i></button>
 <div class="wrap">
     <div class="donaldtrump">
     <img src="img/trump.jpg" alt="piece of shit" style="height:150px; width:150px;">
     </div>
 
 
-    <div class="shit">💩</div>
+    <div class="shit"><i class="em em-poop"></i></div>
 
     <div class="mariaputa">
     <img src="img/maria.jpg" alt="piece of shit" style="height:150px; width:150px;">
@@ -25,21 +29,21 @@
 
 <script type="text/javascript">
 
-    $(document).ready(function(){
-        $('#checktoggler:checkbox').click(function() {
 
-    if ($(this).is(":checked"))
-    {
-        $(".donaldtrump").addClass("animate");
+$(document).ready(function() {
 
-    }
+	$("#buttontrump").click(function() {
+		$(".donaldtrump").toggleClass("animate");
 
-    else {
-        $(".donaldtrump").addClass("animateback");
-    }
-});
+	});
+
+  $("#buttonmaria").click(function() {
+		$(".mariaputa").toggleClass("animatemaria");
+	});
 
 });
+
+
 </script>
 </body>
 </html>
