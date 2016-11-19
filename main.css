@@ -159,3 +159,20 @@ transition-duration:1s;
     50%  {right:200px; top:0px;}
     100% {right:0px; top:0px;}
 } */
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  #buttontrump{
+    margin-top: 710px;
+    margin-left: 15px;
+  }
+
+  #buttonmaria{
+    margin-right:15px;
+    margin-top:710px;
+  }
+
+}
