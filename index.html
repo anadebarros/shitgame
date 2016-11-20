@@ -1,78 +1,78 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Shite Game</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/main.css">
-<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-<script type="text/javascript" src="js/jquery-3.0.0.min.js"> </script>
-<script type="text/javascript" src="js/bootsrap.min.js"></script>
-</head>
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>Shite Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+  <script type="text/javascript" src="js/jquery-3.0.0.min.js"> </script>
+  <script type="text/javascript" src="js/bootsrap.min.js"></script>
+  </head>
 
-<body>
-  <div class="container"> <!--starts bootstrap container-->
-<audio id="audio" src="audio/yummy.mp3"></audio>
-<audio id="audioMaria" src="audio/yeah.mp3"></audio>
-<h1>Shit Game</h1>
+  <body>
+    <div class="container"> <!--starts bootstrap container-->
+  <audio id="audio" src="audio/yummy.mp3"></audio>
+  <audio id="audioMaria" src="audio/yeah.mp3"></audio>
+  <h1>Shit Game</h1>
 
-<button id="buttontrump"><i class="em em-pig2"></i></button>
-<button id="buttonmaria"><i class="em em-information_desk_person"></i></button>
-<div class="wrap">
-  <h2>Score <span id="score">0</span></h2>
-    <div class="donaldtrump">
-    <img src="img/trump.jpg" alt="piece of shit" style="height:150px; width:150px;">
-    </div>
-
-
-    <div class="shit"><i class="em em-poop"></i></div>
-
-    <div class="mariaputa">
-    <img src="img/maria.jpg" alt="piece of shit" style="height:150px; width:150px;">
-    </div>
-
-</div>
-</div><!--finishes bootstrap container-->
-
-<script type="text/javascript">
+  <button id="buttontrump"><i class="em em-pig2"></i></button>
+  <button id="buttonmaria"><i class="em em-information_desk_person"></i></button>
+  <div class="wrap">
+    <h2>Score <span id="score">0</span></h2>
+      <div class="donaldtrump">
+      <img src="img/trump.jpg" alt="piece of shit" style="height:150px; width:150px;">
+      </div>
 
 
-$(document).ready(function() {
+      <div class="shit"><i class="em em-poop"></i></div>
 
-  function play(){
-         var audio = document.getElementById("audio");
-         audio.play();
-  }
+      <div class="mariaputa">
+      <img src="img/maria.jpg" alt="piece of shit" style="height:150px; width:150px;">
+      </div>
 
-  function playMaria(){
-          var audioMaria = document.getElementById("audioMaria");
-          audioMaria.play();
-  }
+  </div>
+  </div><!--finishes bootstrap container-->
 
-  var score = 0;
-
-  function drawScore () {
-				$('#score').html(score);
-			}
-
-	$("#buttontrump").click(function() {
-		$(".donaldtrump").toggleClass("animate");
-    play();
-    score++;
-		drawScore();
-
-	});
-
-  $("#buttonmaria").click(function() {
-		$(".mariaputa").toggleClass("animatemaria");
-    playMaria();
-    score++;
-		drawScore();
-	});
-
-});
+  <script type="text/javascript">
 
 
-</script>
-</body>
-</html>
+  $(document).ready(function() {
+
+    function play(){
+           var audio = document.getElementById("audio");
+           audio.play();
+    }
+
+    function playMaria(){
+            var audioMaria = document.getElementById("audioMaria");
+            audioMaria.play();
+    }
+
+    var score = 0;
+
+    function drawScore () {
+  				$('#score').html(score);
+  			}
+
+  	$("#buttontrump").click(function() {
+  		$(".donaldtrump").toggleClass("animate");
+      play();
+      score++;
+  		drawScore();
+
+  	});
+
+    $("#buttonmaria").click(function() {
+  		$(".mariaputa").toggleClass("animatemaria");
+      playMaria();
+      score++;
+  		drawScore();
+  	});
+
+  });
+
+
+  </script>
+  </body>
+  </html>
