@@ -16,6 +16,15 @@ h1{
   color: yellow;
   text-align: center;
 }
+
+h2 {
+  color: white;
+  font-family: "Press Start 2P";
+  font-size:50px;
+  text-align: center;
+  position:relative;
+}
+
 #number{
   color:white;
   width:100px;
@@ -132,10 +141,15 @@ h1{
 }
 
 .animatemaria{
-margin-left:240px;
+animation-name:maria;
 animation-duration: 2s;
 transition-duration:1s;
 }
+
+@keyframes maria {
+    0%   {right:15px; top:110px;}
+    50%  {right:200px; top:110px;}
+    100% {right:15px; top:110px;}
 
 /* for CSS animation instead of javascript
 .mariaputa {

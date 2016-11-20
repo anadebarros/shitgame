@@ -2,20 +2,23 @@
 <html>
 <head>
   <title>Shite Game</title>
-<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
 <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 <script type="text/javascript" src="js/jquery-3.0.0.min.js"> </script>
+<script type="text/javascript" src="js/bootsrap.min.js"></script>
 </head>
 
 <body>
+  <div class="container"> <!--starts bootstrap container-->
 <audio id="audio" src="audio/yummy.mp3"></audio>
 <audio id="audioMaria" src="audio/yeah.mp3"></audio>
 <h1>Shit Game</h1>
-<div><p id="number"></p></div>
 
 <button id="buttontrump"><i class="em em-pig2"></i></button>
 <button id="buttonmaria"><i class="em em-information_desk_person"></i></button>
 <div class="wrap">
+  <h2>Score <span id="score">0</span></h2>
     <div class="donaldtrump">
     <img src="img/trump.jpg" alt="piece of shit" style="height:150px; width:150px;">
     </div>
@@ -28,6 +31,7 @@
     </div>
 
 </div>
+</div><!--finishes bootstrap container-->
 
 <script type="text/javascript">
 
@@ -44,16 +48,25 @@ $(document).ready(function() {
           audioMaria.play();
   }
 
+  var score = 0;
+
+  function drawScore () {
+				$('#score').html(score);
+			}
 
 	$("#buttontrump").click(function() {
 		$(".donaldtrump").toggleClass("animate");
     play();
+    score++;
+		drawScore();
 
 	});
 
   $("#buttonmaria").click(function() {
 		$(".mariaputa").toggleClass("animatemaria");
     playMaria();
+    score++;
+		drawScore();
 	});
 
 });
