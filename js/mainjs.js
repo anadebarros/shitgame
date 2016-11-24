@@ -26,27 +26,8 @@ var score = 0;
 score++;
 
 // actualizar markup
-$("h2").text(score);
+$("#score").text(score);
 
     $(".donaldtrump").animate({"margin-left": 0});
   }
-
-/*
-  //meu document
-
-  $("#buttontrump").click(function() {
-    $(".donaldtrump").toggleClass("animate");
-    play();
-    score++;
-    drawScore();
-
-  });
-
-  $("#buttonmaria").click(function() {
-    $(".mariaputa").toggleClass("animatemaria");
-    playMaria();
-    score++;
-    drawScore();
-  });
-
 });

@@ -102,17 +102,7 @@ h2 {
   position:fixed;
   float:left;
   z-index:2;
-  animation-duration: 2s;
-  transition-duration:1s;
 }
-
-/*
-.animate{
-  margin-left:200px;
-  animation-duration: 2s;
-  transition-duration:1s;
-} */
-
 
 .shit{
   height:100px;
