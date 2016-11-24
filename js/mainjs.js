@@ -16,7 +16,7 @@ $(document).ready(function() {
   //begin animation
 var score = 0;
 
-  $("buttontrump").click(function () {
+  $("#buttontrump").click(function () {
     $(".donaldtrump").animate({"margin-left": 200}, animEnd);
     play();
   });
