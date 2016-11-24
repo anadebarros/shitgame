@@ -1,8 +1,6 @@
 
 //for audio functions
 
-$(document).ready(function() {
-
   function play(){
     var audio = document.getElementById("audio");
     audio.play();
@@ -30,4 +28,3 @@ $("#score").text(score);
 
     $(".donaldtrump").animate({"margin-left": 0});
   }
-});
