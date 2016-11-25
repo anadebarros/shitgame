@@ -35,39 +35,63 @@
   </div><!--finishes bootstrap container-->
 
   <script>
+
   $(document).ready(function() {
 
-    function play(){
-      var audio = document.getElementById("audio");
-      audio.play();
-    }
+  function play() {
+    var audio = document.getElementById("audio");
+    audio.play();
+  }
 
-    function playMaria(){
-      var audioMaria = document.getElementById("audioMaria");
-      audioMaria.play();
-    }
+  function playMaria() {
+    var audioMaria = document.getElementById("audioMaria");
+    audioMaria.play();
+  }
 
-    //begin animation
   var score = 0;
 
-    $("#buttontrump").click(function () {
-      $(".donaldtrump").animate({"margin-left": 200}, animEnd);
-      play();
-    });
-
-    function animEnd () {
-
-  score++;
-
-  // actualizar markup
-  $("#score").text(score);
-
-      $(".donaldtrump").animate({"margin-left": 0});
-    }
+  $("#buttontrump").click(function() {
+    $(".donaldtrump").animate({
+      "margin-left": 240
+    }, animEnd);
+    play();
   });
 
+  function animEnd() {
 
+    // incrementar pontuação
+    score++;
 
-  </script>
-    </body>
-    </html>
+    // actualizar markup
+    $("#score").text(score);
+
+    // terminar animação
+    $(".donaldtrump").animate({
+      "margin-left": 10
+    });
+  }
+
+  $("#buttonmaria").click(function() {
+    $(".mariaputa").animate({
+      "margin-left": 220
+    }, animEndMaria);
+    playMaria();
+  });
+
+  function animEndMaria() {
+
+    // incrementar pontuação
+    score++;
+
+    // actualizar markup
+    $("#score").text(score);
+
+    // terminar animação
+    $(".mariaputa").animate({
+      "margin-left": 435
+    });
+  }
+
+});
+
+</script> 
