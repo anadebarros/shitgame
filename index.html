@@ -35,11 +35,46 @@
 
         </div>
     </div>
-    < <script>
 
-        $(document).ready(function() { function play() { var audio = document.getElementById("audio"); audio.play(); } function playMaria() { var audioMaria = document.getElementById("audioMaria"); audioMaria.play(); } var score = 0; $("#buttontrump").click(function()
-        { $(".donaldtrump").animate({ "margin-left": 240 }, animEnd); play(); }); function animEnd() { // incrementar pontuação score++; // actualizar markup $("#score").text(score); // terminar animação $(".donaldtrump").animate({ "margin-left": 10 });
-        } $("#buttonmaria").click(function() { $(".mariaputa").animate({ "margin-left": 220 }, animEndMaria); playMaria(); }); function animEndMaria() { // incrementar pontuação score++; // actualizar markup $("#score").text(score); // terminar animação
-        $(".mariaputa").animate({ "margin-left": 435 }); } });
+    <script>
+        $(document).ready(function() {
+            function play() {
+                var audio = document.getElementById("audio");
+                audio.play();
+            }
 
-        </script>
+            function playMaria() {
+                var audioMaria = document.getElementById("audioMaria");
+                audioMaria.play();
+            }
+            var score = 0;
+            $("#buttontrump").click(function() {
+                $(".donaldtrump").animate({
+                    "margin-left": 240
+                }, animEnd);
+                play();
+            });
+
+            function animEnd() {
+                score++;
+                $("#score").text(score);
+                $(".donaldtrump").animate({
+                    "margin-left": 10
+                });
+            }
+            $("#buttonmaria").click(function() {
+                $(".mariaputa").animate({
+                    "margin-left": 220
+                }, animEndMaria);
+                playMaria();
+            });
+
+            function animEndMaria() {
+                score++;
+                $("#score").text(score);
+                $(".mariaputa").animate({
+                    "margin-left": 435
+                });
+            }
+        });
+    </script>
