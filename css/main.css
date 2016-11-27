@@ -157,34 +157,58 @@ h2 {
     }
 
     .em {
-    height: 42px;
-    width: 2.5em;
+      height: 49px;
+      width: 60px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: inline-block;
   }
 
-  #buttonmaria{
-    width: 106px;
-    height: 72px;
-    border-radius: 40px;
-    border: none;
-    margin-top: 299px;
-    float: right;
-}
+    #buttonmaria{
+        width: 106px;
+        height: 62px;
+        border-radius: 40px;
+        border: none;
+        margin-top: 299px;
+        margin-right: 2px;
+    }
 
-#buttontrump {
-    width: 106px;
-    height: 72px;
-    border-radius: 40px;
-    border: none;
-    margin-top: 299px;
-    float: left;
-  }
+    #buttontrump {
+      width: 106px;
+      height: 62px;
+      border-radius: 40px;
+      border: none;
+      margin-top: 299px;
+      margin-left: -1px;
 
-.shit {
-    display: inline-grid;
-    margin-top: 90px;
-    margin-left: 107px;
-    z-index: 1;
+      }
+
+    .shit {
+      display: inline-grid;
+      margin-top: 78px;
+      margin-left: 119px;
+      z-index: 1;
+    }
+
+    .mariaputa{
+      width: 100px;
+      height: 100px;
+      margin-left: 228px;
+      margin-top: 50px;
+      background-color: none;
+      z-index: 1;
+      position: fixed;
+    }
+
+    .donaldtrump {
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    margin-left: 7px;
+    background-color: none;
     position: fixed;
+    z-index: 2;
 }
 
 }
