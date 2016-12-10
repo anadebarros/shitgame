@@ -1,2 +1,2 @@
 # shitgame
-https://rawgit.com/anadebarros/shitgame/master/index.html
+A study on JS and my feelings on Donald Trump
